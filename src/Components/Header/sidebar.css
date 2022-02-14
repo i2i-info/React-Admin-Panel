@@ -1,0 +1,90 @@
+.page_sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 250px;
+  height: 100vh;
+  /* overflow-y: auto; */
+  background: #f3f6f9;
+  transition: 0.5s;
+  z-index: 999;
+}
+@media (max-width: 991.98px) {
+  .page_sidebar {
+    margin-left: -250px;
+  }
+}
+
+@media (min-width: 992px) {
+  .page_sidebar {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .actives {
+    margin-left: 0;
+    top: 22px;
+  }
+}
+@media (min-width: 992px) {
+  .actives {
+    margin-left: -250px;
+  }
+}
+
+.page_sidebar .navbar .navbar-nav .nav-link:hover,
+.page_sidebar .navbar .navbar-nav .nav-link.active {
+  color: #009cff;
+  background: #ffffff;
+  border-color: #009cff;
+}
+
+.page_sidebar .navbar .navbar-nav .nav-link {
+  padding: 7px 20px;
+  color: #191c24;
+  font-weight: 500;
+  border-left: 3px solid #f3f6f9;
+  border-radius: 0 30px 30px 0;
+  outline: none;
+  text-align: left;
+}
+
+.page_sidebar .navbar .navbar-nav .nav-link.active i {
+  background: #f3f6f9;
+}
+.page_sidebar .navbar .navbar-nav .nav-link i {
+  width: 40px;
+  height: 40px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 40px;
+}
+
+.page_sidebar .navbar .dropdown-toggle::after {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  border: none;
+  content: "\f107";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  transition: 0.5s;
+}
+
+.w-8 {
+  width: 5.8rem;
+}
+
+@media (max-width: 425px) {
+  .dropdown-menu-end[data-bs-popper] {
+    right: -50px !important;
+  }
+}
+
+#mainnavbar {
+  transition: all 0.7s ease-in-out;
+  -webkit-transition: all 0.7s ease-in-out;
+}

@@ -1,0 +1,58 @@
+/* @media (min-width: 992px) {
+  .content {
+    width: 100%;
+  }
+} */
+.content {
+  position: relative;
+  width: 100%;
+  margin-left: 250px;
+  min-height: 100vh;
+  background: #ffffff;
+  transition: 0.5s;
+}
+
+@media (max-width: 991.98px) {
+  .content {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+
+@media (min-width: 992px) {
+  .active {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+
+.scrollTop {
+  position: fixed;
+  right: 20px;
+  bottom: 100px;
+  align-items: center;
+  height: 20px;
+  justify-content: end;
+  z-index: 1000;
+  cursor: pointer;
+  animation: fadeIn 0.3s;
+  transition: opacity 0.4s;
+  opacity: 0.5;
+  background-color: #009cff;
+  border-color: #009cff;
+  color: #ffffff;
+  border-radius: 50%;
+}
+
+.scrollTop:hover {
+  opacity: 1;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.5;
+  }
+}
