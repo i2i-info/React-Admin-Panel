@@ -1,15 +1,28 @@
 @import url("https://fonts.googleapis.com/css2?family=Heebo&family=IBM+Plex+Sans+Thai+Looped:wght@200&display=swap");
 body {
-  margin: 0;
-  font-family: "Heebo", sans-serif;
-  
+    margin: 0;
+    font-family: "Heebo", sans-serif;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 }
-html{
 
-  scroll-behavior: smooth;
+html {
+    scroll-behavior: smooth;
+}
+
+.i2i-header {
+    position: fixed;
+    z-index: 99999;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(12, 12, 12, 0.75);
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
+}
+
+.follow img {
+    padding: 5px;
+    width: 1.5em;
+    color: #fff;
 }
